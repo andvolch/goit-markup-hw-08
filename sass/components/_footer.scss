@@ -1,0 +1,72 @@
+.basement {
+  display: flex;
+  background-color: $footer-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-box {
+  display: flex;
+  flex-basis: calc(50% - 15px);
+  justify-content: space-between;
+  align-items: baseline;
+}
+.contacts-box {
+  display: flex;
+  align-items: baseline;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.logo__end--light {
+  color: $white-text-color;
+}
+
+.contacts-list {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: $base-spacing;
+  color: $white-text-color;
+}
+
+.contacts-list__link {
+  color: $pale-color-transparent;
+
+  &:hover,
+  &:focus {
+  color: $akcent-color;
+  }
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* ФУТЕР БЛОК2 */
+.social-links {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.social-links > .subtitle {
+  color: $white-text-color;
+}
+
+.social-list__link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ФУТЕР БЛОК 3 */
+.send {
+  display: inline-block;
+  margin-left: 93px;
+}
+
+.send > .subtitle {
+  color: $white-text-color;
+}

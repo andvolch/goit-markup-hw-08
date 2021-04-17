@@ -1,0 +1,40 @@
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.work__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.work__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work__thumb {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  min-height: 70px;
+  background-color: $work-tumb-bg-color;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__thumb > .subtitle {
+  color: $white-text-color;
+}
