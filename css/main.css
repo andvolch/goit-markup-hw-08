@@ -576,12 +576,18 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 86px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-bottom: 94px;
   }
 }
 
