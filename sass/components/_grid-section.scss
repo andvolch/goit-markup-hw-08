@@ -1,24 +1,34 @@
 .portfolio {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 86px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
 }
 
 .grid {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-left: calc(-1 * 30px);
-  margin-top: calc(-1 * 30px);
+  
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
 }
 
 .grid > .grid__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+  
+  // margin-left: 30px;
   margin-top: 30px;
   border: 1px solid $border-grid-item-color;
   transition: box-shadow $time-transition $timing-function;
@@ -31,6 +41,17 @@
   &:hover .product__description {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    
   }
 }
 

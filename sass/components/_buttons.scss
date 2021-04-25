@@ -1,7 +1,38 @@
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .filter-box__button {
   display: flex;
   justify-content: center;
   margin-top: 0;
+  margin-bottom: 0;
   margin-right: 8px;
   padding: 6px 22px;
   font-family: $main-font;
@@ -16,10 +47,9 @@
   cursor: pointer;
   border: none;
 
-  transition: background-color $time-transition $timing-function,
-    color $time-transition $timing-function, 
-    box-shadow $time-transition $timing-function;
+  transition: background-color $time-transition $timing-function, color $time-transition $timing-function, box-shadow $time-transition $timing-function;
 
+  
   &:hover,
   &:focus {
     background-color: $akcent-color;
@@ -27,6 +57,12 @@
     box-shadow: $box-shadow-filter-button;
   }
 
+  &:nth-child(-n+3) {
+  
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }     
 }
 
 
@@ -54,18 +90,24 @@
 
   &:hover,
   &:focus {
-  background-color: $akcent-bg-color-button;
+    background-color: $akcent-bg-color-button;
   }
 }
 
 .send--button {
-  display: flex;
+  // display: flex;
   margin-top: 20px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 28px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-right: 0;
+  }
 }
 
 .form-modal__button {
@@ -76,6 +118,7 @@
 
 .modal__button-close {
   position: absolute;
+  z-index: 2;
   top: 8px;
   right: 8px;
   padding: 0;

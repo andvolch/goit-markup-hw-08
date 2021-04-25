@@ -1,37 +1,73 @@
 .basement {
-  display: flex;
   background-color: $footer-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+
 .footer-box {
-  display: flex;
-  flex-basis: calc(50% - 15px);
-  justify-content: space-between;
-  align-items: baseline;
+  display: block;
+  
+  justify-content: center;
+  align-items: baseline; 
+  
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-basis: calc(50% - 15px);
+        
+  }
+
 }
+
 .contacts-box {
-  display: flex;
+  display: block;
   align-items: baseline;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 2 - 45px);
+  }
+
 }
+
+
 .contacts {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+  }
+  
 }
+
+
 .logo__end--light {
   color: $white-text-color;
 }
 
 .contacts-list {
   margin-top: 20px;
+  margin-bottom: 60px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: $base-spacing;
   color: $white-text-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+
+  }
+
 }
 
 .contacts-list__link {
@@ -43,18 +79,39 @@
   }
 }
 
-.contacts-list__item:not(:last-child) {
-  margin-bottom: 9px;
+
+.contacts-list__item {
+  display: flex;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
+ 
 }
 
 /* ФУТЕР БЛОК2 */
 .social-links {
-  display: inline-block;
-  margin-left: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .social-links > .subtitle {
   color: $white-text-color;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .social-list__link--dark {
@@ -63,10 +120,21 @@
 
 /* ФУТЕР БЛОК 3 */
 .send {
-  display: inline-block;
-  margin-left: 93px;
+  display: block;
+  margin-left: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-left: 93px;
+  }
 }
 
 .send > .subtitle {
   color: $white-text-color;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+    
+  }
 }

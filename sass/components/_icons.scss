@@ -1,14 +1,33 @@
-.nav-list__icon {
+.communication__icon {
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
 }
 
-.nav-list__link {
-  transition: color $time-transition $timing-function;
+.communication__icon-tel {
+  width: 10px;
+  height: 14px;
 
-  &:hover .nav-list__icon,
-  &:focus .nav-list__icon {
-    fill: $akcent-color;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.communication__icon-envelope {
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
   }
 }
 
@@ -41,7 +60,6 @@
   .social-list__link:focus & {
     fill: $white-text-color;
   }
-
 }
 
 .social-list__link .social-list__icon--white {
@@ -51,7 +69,7 @@
 .clients__icon {
   fill: $pale-color;
   transition: fill $time-transition $timing-function;
-  
+
   .clients__link:hover &,
   .clients__link:focus & {
     fill: $akcent-color;
@@ -79,8 +97,7 @@
 }
 
 .form-modal__icon-check {
-  margin-right: 7px;
-  margin-left: 14px;
+  margin-right: 8px;
   border: 2px solid $main-text-color;
   border-radius: 2px;
   fill: none;
@@ -92,5 +109,3 @@
     background-color: $akcent-color;
   }
 }
-
-

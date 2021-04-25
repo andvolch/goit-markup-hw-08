@@ -1,0 +1,21 @@
+.mobile-menu {
+  background-color: $main-background-color;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 48px;
+    z-index: 1;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
