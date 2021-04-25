@@ -489,11 +489,23 @@ p {
 }
 
 .filters {
-  padding-top: 102px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding-top: 94px;
+  }
 }
 
 .filters-box {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-box {
+    padding-bottom: 50px;
+  }
 }
 
 .filter-box__list {
