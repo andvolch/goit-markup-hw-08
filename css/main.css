@@ -649,7 +649,10 @@ p {
   display: flex;
   content: "";
   width: 100%;
-  padding: 63px 24px;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  align-items: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
