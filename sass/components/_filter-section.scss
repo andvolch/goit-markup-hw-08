@@ -3,27 +3,30 @@
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
   }
-  
-}
-
-.filters-box {
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 50px;
-  }
 }
 
 .filter-box__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
+  margin-bottom: 40px;
   justify-content: start;
 
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
-  
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.filter-box__item {
+  &:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
 }

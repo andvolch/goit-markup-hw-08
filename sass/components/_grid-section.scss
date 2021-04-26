@@ -12,7 +12,6 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
   }
-
 }
 
 .grid {
@@ -21,7 +20,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -31,8 +29,6 @@
 }
 
 .grid > .grid__item {
-  
-  // margin-left: 30px;
   margin-top: 30px;
   border: 1px solid $border-grid-item-color;
   transition: box-shadow $time-transition $timing-function;
@@ -50,12 +46,10 @@
   @media screen and (min-width: 768px) {
     margin-left: 30px;
     flex-basis: calc(100% / 2 - 30px);
-
   }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
-    
   }
 }
 

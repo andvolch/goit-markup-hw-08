@@ -47,25 +47,17 @@
   cursor: pointer;
   border: none;
 
-  transition: background-color $time-transition $timing-function, color $time-transition $timing-function, box-shadow $time-transition $timing-function;
+  transition: background-color $time-transition $timing-function,
+    color $time-transition $timing-function,
+    box-shadow $time-transition $timing-function;
 
-  
   &:hover,
   &:focus {
     background-color: $akcent-color;
     color: $white-text-color;
     box-shadow: $box-shadow-filter-button;
   }
-
-  &:nth-child(-n+3) {
-  
-    @media screen and (max-width: 767px) {
-      margin-bottom: 15px;
-    }
-  }     
 }
-
-
 
 .button {
   display: flex;
@@ -95,7 +87,6 @@
 }
 
 .send--button {
-  // display: flex;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;

@@ -1,44 +1,36 @@
 .hero {
-  
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-image: $hero-gradient, url(../images/geroy/mobile.jpg);
-  width: 480px;
+  max-width: 480px;
   height: 400px;
   background-repeat: no-repeat;
   background-color: $hero-bg-color;
   background-size: cover;
   background-position: center;
 
- 
-  
-
   @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 400px;
+    max-width: 768px;
     background-image: $hero-gradient, url(../images/geroy/tablet.jpg);
-    
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: $hero-gradient, url(../images/geroy/desktop.jpg);
-    
   }
-  
 }
 
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .hero {
+  .hero {
     background-image: $hero-gradient, url(../images/geroy/mobile@2x.jpg);
 
     @media screen and (min-width: 768px) {
@@ -47,12 +39,9 @@
 
     @media screen and (min-width: 1200px) {
       background-image: $hero-gradient, url(../images/geroy/desktop@2x.jpg);
-
     }
-
   }
 }
-
 
 .hero__title {
   font-weight: 900;

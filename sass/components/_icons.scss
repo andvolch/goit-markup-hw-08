@@ -1,3 +1,21 @@
+.menu-button__icon-menu40 {
+  transition: fill $time-transition $akcent-color;
+
+  &:hover,
+  &:focus {
+    fill: $akcent-color;
+  }
+}
+
+.menu-close__icon-close40 {
+  transition: fill $time-transition $akcent-color;
+
+  &:hover,
+  &:focus {
+    fill: $akcent-color;
+  }
+}
+
 .communication__icon {
   margin-right: 10px;
   fill: currentColor;

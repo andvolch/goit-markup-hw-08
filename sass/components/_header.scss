@@ -35,6 +35,11 @@
   &__start {
     color: $akcent-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .nav {
@@ -45,6 +50,10 @@
   display: flex;
 
   @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 48px;
+    left: 40px;
+
     &__item:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -55,7 +64,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 88px;
-    margin-right: 50px;
+    margin-right: 84px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -63,8 +72,6 @@
     margin-right: 305px;
   }
 }
-
-
 
 .navigation__item {
   display: flex;
@@ -76,18 +83,15 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
 
-
   &:not(:last-child) {
     @media screen and (min-width: 768px) {
       margin-right: 50px;
     }
-
   }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.14;
   }
-
 }
 
 .navigation__link {
@@ -101,7 +105,7 @@
 
 .navigation__link--underlines {
   position: relative;
-  
+
   color: $akcent-color;
 
   &::after {
@@ -115,20 +119,22 @@
     height: 4px;
     background-color: $akcent-color;
     border-radius: 2px;
-
   }
-
 }
 
 .communication {
-  display: flex;
-  align-items: center
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    position: static;
+  }
 }
 
-
-
 .communication__list {
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -136,9 +142,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row-reverse;
-    
   }
-  
 }
 
 .communication__link {
@@ -163,12 +167,17 @@
     font-size: 12px;
     line-height: 1.17;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .communication__link--big {
   @media screen and (max-width: 767px) {
     display: flex;
-    margin-top: 302px;
+    // margin-top: 302px;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 34px;
@@ -179,18 +188,23 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 10px;
-    
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 0px;
     margin-left: 30px;
-   
   }
-
 }
 
-.social {
+// .social {
+//   display: flex;
+
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+// }
+
+.social__list {
   display: flex;
 
   @media screen and (min-width: 768px) {
@@ -198,12 +212,7 @@
   }
 }
 
-.social__list {
-  display: flex;
-}
-
 .social__item {
-  position: relative;
   display: flex;
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);

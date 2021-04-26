@@ -43,19 +43,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  max-width: 226px;
   height: 90px;
   border: 1px solid $pale-color;
   border-radius: 4px;
   transition: border $time-transition $timing-function;
-
-  @media screen and (min-width: 768px) {
-    width: 226px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
 
   &:hover,
   &:focus {
