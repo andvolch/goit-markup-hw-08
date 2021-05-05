@@ -1,12 +1,9 @@
 .form {
-  
-
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
 }
 
 .form__input {
@@ -30,16 +27,12 @@
     color: $pale-color-transparent;
   }
 
-
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-left: 0;
     margin-right: 0;
   }
-
 }
-
-
 
 /* ФОРМА МОДАЛЬНОГО ОКНА */
 
@@ -160,6 +153,11 @@
 .form-modal__link {
   margin-left: 3px;
   color: $akcent-color;
+  text-decoration: none;
+  background-position: 0 100%;
+  background-size: 100% 1px;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(currentColor, currentColor);
 }
 
 .form-modal__contract-checkbox {

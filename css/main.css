@@ -1439,6 +1439,11 @@ p {
 .form-modal__link {
   margin-left: 3px;
   color: #2196f3;
+  text-decoration: none;
+  background-position: 0 100%;
+  background-size: 100% 1px;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(currentColor, currentColor);
 }
 
 .form-modal__contract-checkbox {
